@@ -1,0 +1,89 @@
+.App {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.fcst-con {
+  width: 70vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  margin-left: 0 !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.forecasts {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center;
+  padding-left: 0 !important;
+  padding: 1vw !important;
+}
+
+.forecasts:first-child {
+  border-radius: 0.5vw;
+  border: 1px solid darkgray;
+  background-color: rgb(250, 250, 250);
+}
+
+.dark .forecasts:first-child {
+  color: black;
+}
+
+.dark .current .forecasts {
+  color: white;
+  border: none;
+}
+
+.temps span:last-child {
+  color: darkgray;
+}
+
+.temps span {
+  margin: 0 0.2vw;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.current {
+  display: flex;
+  justify-content: center;
+}
+
+.current .forecasts {
+  background-color: transparent !important;
+  border: 0;
+}
+
+hr {
+  width: 100%;
+}
+
+@media (max-width: 425px) {
+  .header {
+    flex-direction: column;
+    gap: 2vw;
+  }
+}
