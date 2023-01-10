@@ -29,6 +29,7 @@ describe("Emoji Search Tests", () => {
   });
   test("Data copied to clipboard?", () => {
     let copiedData = "";
+    // we have to assign to catch copied data, otherwise returns undefined.
     Object.assign(navigator, {
       clipboard: {
         writeText: jest.fn(val => {
